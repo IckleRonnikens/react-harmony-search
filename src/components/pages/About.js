@@ -8,11 +8,11 @@ class About extends Component {
         return (
 <section className="about" id="about">
 <div className="container">
-  <h1>About</h1><hr />
+  <h1>About HMS Harmony</h1><hr />
   <div className="row">
     <div className="col-sm-8 my-3">
 
-          <h2>Numbthumbz Gaming</h2><hr />
+          <h2>HMS Harmony</h2><hr />
           <p>
             Here at <u>Numbthumbz</u> gaming, we're all about video games. We love anticipating them, we love playing them and then we love talking about them.
             So much so, that we like to review video games that we have played and enjoyed. There's no discrimination, a wide variety of games will surely be covered 
@@ -37,7 +37,7 @@ class About extends Component {
 
     </div>
     <div className="col-sm-4 my-3">
-      <h2 >Social</h2><hr />
+      <h2>Social</h2><hr />
 
       <div className="row">
         <div className="col-3"><i className="fab fa-5x fa-twitter-square  zoom"></i></div>
@@ -47,7 +47,7 @@ class About extends Component {
       </div>
         
       <div className="clearfix"></div><hr /><br />
-      <h2 >Upcoming</h2><hr />
+      <h2>Latest Fanart</h2><hr />
       <div className="row " >
 
         <div className="col-4"><img src="https://live.staticflickr.com/65535/49744862371_d5527db3bc_o.jpg" alt="" className="w-100 zoom" /></div>

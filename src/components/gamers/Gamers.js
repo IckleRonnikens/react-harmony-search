@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'; 
-import VideoGamers from '../../data/stories.json'
+import VideoGamers from '../../data/gamers.json'
 
 class Gamers extends Component {
 
@@ -8,7 +8,7 @@ class Gamers extends Component {
             return (
             <section className="gamers-section" id="gamers">
                 <div className="container">
-                    <h1>Gamers</h1><hr />
+                    <h1>Fanfiction</h1><hr />
                     <div className="row">
 
                 {VideoGamers.gamers.map(gamers=>(

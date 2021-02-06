@@ -10,7 +10,7 @@ class AppFooter extends Component {
   <p className="float-right text-white">
     <Link to="/#home">Return to the top</Link>
   </p>
-    <span>&copy; 2020 - James Stansfield-Smith</span>
+    <span>&copy; 2020 - HMS Harmony</span>
 
   </div>
 </footer>
