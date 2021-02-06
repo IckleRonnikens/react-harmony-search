@@ -1,0 +1,269 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #292b2c;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+h1  {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  }
+
+ h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-family: inherit;
+  font-weight: 100;
+}
+
+
+li {
+  font-family: inherit;
+  font-weight: 100;
+}
+
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+
+/**  Header Navigation **/
+
+header {
+  background: url(../images/bg-header.jpg) no-repeat 100% 5%;
+  background-repeat:no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.header-section-inner{
+  display:flex;
+  flex-direction:column;
+  color: #fff;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  margin:auto;
+  height:100%;
+  padding:5rem 0;
+  max-width:860px;
+}
+
+.header-section-inner h1{
+  font-size:5rem;
+  margin-top:0rem;
+}
+
+.header-section-inner p{
+  margin-top: 1rem;
+  font-size:1.5rem;
+}
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+/* ABOUT SECTION */
+
+.about {  
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 160%;
+  min-height: 100vh;
+  color: #292b2c;
+}
+.about a:hover {font-weight: bold;}
+.about h1 {color: #292b2c; text-align: center; padding-top: 6rem;}
+.about h2, h3, h4, h5 {color: #292b2c; text-align: center;}
+.about a {font-weight: bold; color: #292b2c;}
+
+/* GAMERS SECTION  */
+
+.gamers-section {
+  background-color: #292b2c;
+  font-family: 'Roboto', sans-serif;
+  line-height: 160%;
+  min-height: 100vh;
+  padding: 1em;
+}
+.gamers-section a:hover {color: #fff; font-weight: bold;}
+.gamers-section h1 {padding-top: 6rem; color: #fff; text-align: center; }
+.gamers-section h2, h3, h4 {color: #fff; text-align: center;}
+.gamers-section hr {background-color: #fff;}
+
+
+/* REVIEWS SECTION  */
+
+.reviews-section {
+  background-color: #ffffff;
+  color: #292b2c;
+  font-family: 'Roboto', sans-serif;
+  line-height: 160%;
+  min-height: 100vh;
+}
+.reviews-section a:hover {color: #292b2c; font-weight: bold;}
+.reviews-section h1 {padding-top: 6rem; color: #292b2c; text-align: center; }
+.reviews-section h2, h3, h4 {color: #292b2c; font-size: 1.3em; text-align: center;}
+.reviews-section hr {background-color: #292b2c;}
+
+
+.review-details {
+  color: #292b2c;
+  position: relative;
+  min-height: 100vh;
+}
+
+.review-details h1 {
+  color: #292b2c;
+  font-size: 3em;
+  padding-top: 2rem;
+  
+}
+.review-details h2, h3, h4, h5 {
+  color: #292b2c;
+  font-size:2em;
+}
+.review-details p {
+  color: #292b2c;
+}
+
+.review-details a:link, a:visited, a:hover {
+  color: #292b2c;
+}
+
+.review-details hr {
+  background-color: #292b2c;
+}
+
+.review-quote {
+  background-color: #f8f9fa;
+  height: auto;
+  padding: 0em;
+}
+
+/** GALLERY SECTION **/
+
+.gallery-section {
+  background-color: #292b2c;
+  background-repeat:no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  padding-bottom: 0rem;
+}
+.gallery-section h1 {padding-top: 6rem; color: #fff; text-align: center;}
+.gallery-section h2, h3, h4 {color: #292b2c;}
+.gallery-section hr {background-color: #fff;}
+
+
+.pixgrid {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0px 0px 10px 0px;
+}
+
+.zoom {
+  transition: transform .2s; 
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1); 
+}
+
+/* @media (min-width: 500px) and (max-width: 768px) {
+  .pixgrid img {
+    width: 100%;
+  }
+} */
+
+
+/* SEARCH CONTENT */
+
+.search-section {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  color: #292b2c;
+}
+.search-section a:hover {font-weight: bold;}
+.search-section h1 {padding-top: 6rem; color: #292b2c; text-align: center; }
+.search-section h2, h3, h4 {color: #292b2c; text-decoration: underline;}
+.search-section hr {background-color: #292b2c;}
+
+
+/**  404 **/
+
+.not-found-section {
+  background: url(../images/bg-error.jpg) no-repeat 100% 5%;
+  background-repeat:no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.not-found-section-inner{
+  display:flex;
+  flex-direction:column;
+  color: #fff;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  margin:auto;
+  height:100%;
+  padding:5rem 0;
+  max-width:860px;
+}
+
+.not-found-section-inner h1{
+  font-size:5rem;
+  margin-top:0rem;
+}
+
+.not-found-section-inner p{
+  margin-top: 1rem;
+  font-size:1.5rem;
+}
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+}
+
+/* FOOTER  */
+
+.footer {
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  min-height: auto;
+  color: #fff;
+}
