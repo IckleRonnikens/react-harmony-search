@@ -43,7 +43,7 @@ a {
 header {
   background: url(../images/bg-header.jpg) no-repeat 100% 5%;
   background-repeat:no-repeat;
-  background-position: bottom;
+  background-position: top;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
@@ -95,19 +95,20 @@ header {
 .about h2, h3, h4, h5 {color: #292b2c; text-align: center;}
 .about a {font-weight: bold; color: #292b2c;}
 
-/* GAMERS SECTION  */
+/* FANFICTION SECTION  */
 
-.gamers-section {
-  background-color: #292b2c;
+.fanfiction-section {
+  background-color: #fff;
   font-family: 'Roboto', sans-serif;
   line-height: 160%;
   min-height: 100vh;
   padding: 1em;
+  color: #292b2c;
 }
-.gamers-section a:hover {color: #fff; font-weight: bold;}
-.gamers-section h1 {padding-top: 6rem; color: #fff; text-align: center; }
-.gamers-section h2, h3, h4 {color: #fff; text-align: center;}
-.gamers-section hr {background-color: #fff;}
+.fanfiction-section a:hover {color: #292b2c; font-weight: bold;}
+.fanfiction-section h1 {padding-top: 6rem; color: #292b2c; text-align: center; }
+.fanfiction-section h2, h3, h4 {color: #292b2c; text-align: center;}
+.fanfiction-section hr {background-color: #292b2c;}
 
 
 /* REVIEWS SECTION  */
@@ -159,22 +160,22 @@ header {
   padding: 0em;
 }
 
-/** GALLERY SECTION **/
+/** FANART SECTION **/
 
-.gallery-section {
-  background-color: #292b2c;
+.fanart-section {
+  background-color: #fff;
   background-repeat:no-repeat;
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
   min-height: 100vh;
-  color: #fff;
+  color: #292b2c;
   padding-bottom: 0rem;
 }
-.gallery-section h1 {padding-top: 6rem; color: #fff; text-align: center;}
-.gallery-section h2, h3, h4 {color: #292b2c;}
-.gallery-section hr {background-color: #fff;}
+.fanart-section h1 {padding-top: 6rem; color: #292b2c; text-align: center;}
+.fanart-section h2, h3, h4 {color: #292b2c;}
+.fanart-section hr {background-color: #292b2c;}
 
 
 .pixgrid {
@@ -263,7 +264,12 @@ header {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  position: relative;
   min-height: auto;
   color: #fff;
+  position: fixed;
+  height: auto;
+  bottom: 0;
+  width: 100%;
 }
+
+.footer a:link, a:visited, a:hover {color: #fff;}
