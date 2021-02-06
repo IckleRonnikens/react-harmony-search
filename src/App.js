@@ -4,7 +4,7 @@ import ReactGA from "react-ga";
 
 import Dashboard from './components/layout/Dashboard';
 
-import GamersProfile from './components/gamers/GamersProfile';
+import FanfictionProfile from './components/fanfiction/FanfictionProfile';
 
 import ReviewsPost from './components/reviews/ReviewsPost'
 
@@ -31,7 +31,8 @@ export default class App extends React.Component {
           <Switch>
           <Route exact path={process.env.PUBLIC_URL + "/"} component={Dashboard} />
         
-            <Route exact path="/gamers/profiles" component={GamersProfile} />
+            <Route exact path="/fanfiction/profiles" component={FanfictionProfile} />
+            
             <Route exact path={process.env.PUBLIC_URL + "/reviews/:id"} component={ReviewsPost} />
 
             <Route exact path="/search" component={Search} />

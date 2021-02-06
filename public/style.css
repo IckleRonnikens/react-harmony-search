@@ -95,19 +95,20 @@ header {
 .about h2, h3, h4, h5 {color: #292b2c; text-align: center;}
 .about a {font-weight: bold; color: #292b2c;}
 
-/* GAMERS SECTION  */
+/* FANFICTION SECTION  */
 
-.gamers-section {
+.fanfiction-section {
   background-color: #292b2c;
   font-family: 'Roboto', sans-serif;
   line-height: 160%;
   min-height: 100vh;
   padding: 1em;
+  color: #fff;
 }
-.gamers-section a:hover {color: #fff; font-weight: bold;}
-.gamers-section h1 {padding-top: 6rem; color: #fff; text-align: center; }
-.gamers-section h2, h3, h4 {color: #fff; text-align: center;}
-.gamers-section hr {background-color: #fff;}
+.fanfiction-section a:hover {color: #fff; font-weight: bold;}
+.fanfiction-section h1 {padding-top: 6rem; color: #fff; text-align: center; }
+.fanfiction-section h2, h3, h4 {color: #fff; text-align: center;}
+.fanfiction-section hr {background-color: #fff;}
 
 
 /* REVIEWS SECTION  */

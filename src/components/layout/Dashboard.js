@@ -2,7 +2,7 @@ import React from 'react';
 
 import Home from '../pages/Home';
 import About from '../pages/About';
-import Gamers from '../gamers/Gamers';
+import Fanfiction from '../fanfiction/FanfictionList';
 import Reviews from '../reviews/Reviews'
 
 import AppHeader from '../layout/AppHeader';
@@ -15,7 +15,7 @@ export default function Dashboard() {
         <AppHeader />
         <Home />
         <About />
-        <Gamers />
+        <Fanfiction />
         <Reviews />
         <Gallery />
 
