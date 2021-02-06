@@ -1,34 +1,51 @@
-import React, { Component } from 'react'
-import { HashLink as Link } from 'react-router-hash-link'; 
-import Stories from '../../data/stories.json';
+import React, { useState, useEffect } from 'react';
+import Posts from './FanfictionPost';
+import Pagination from '../pages/Pagination';
+import axios from 'axios';
 
-class FanfictionList extends Component {
+const App = () => {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(10);
 
-    render() {
-            return (
-            <section className="fanfiction-section" id="fanfiction">
-                <div className="container">
-                    <h1>Fanfiction</h1><hr />
-                    <div className="row">
+  useEffect(() => {
+    const fetchPosts = async () => {
+      setLoading(true);
+      const res = await axios.get('./data/stories.json');
+      setPosts(res.data);
+      setLoading(false);
+    };
 
-                {Stories.stories.map(stories=>(
-                    <div className="col-12" key={stories.id} >                          
-                        <p className="w-100">{stories.title}</p>
-                        <p className="w-100">{stories.summary}</p>
-                                
-                            <br />
-                <Link to={`/stories/profiles`}  ><button className="btn btn-light rounded-0 btn-sm text-dark mt-2 w-100">{stories.title}</button></Link>
-                    </div>   ))}
+    fetchPosts();
+  }, []);
 
-                    </div>
-                </div>
-            </section>
-    
+  // Get current posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
+  // Change page
+  const paginate = pageNumber => setCurrentPage(pageNumber);
 
+  return (
+    <section className="fanfiction-section" id="fanfiction">
+        <div className="container">
+            <h1>Fanfiction</h1><hr />
+            <div className="row">
+                <div className="col-12">
 
+      <Posts posts={currentPosts} loading={loading} />
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={posts.length}
+        paginate={paginate}
+      />
+      </div>
+    </div>
+    </div>
+    </section>
+  );
+};
 
-            )}
-}
-
-export default FanfictionList;
+export default App;

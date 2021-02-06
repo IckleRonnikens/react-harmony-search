@@ -4,7 +4,7 @@ import PhotoListItem from "./photoListItem";
 import { HashLink as Link } from 'react-router-hash-link';
 
 
-class Gallery extends Component {
+class Fanart extends Component {
 
 
   constructor(props) {
@@ -62,9 +62,9 @@ class Gallery extends Component {
 
   render() {
     return (
-<section id="gallery" className="gallery-section">
+<section id="fanart" className="fanart-section">
   <div className="container">
-  <h1><Link to="/gallery" className="text-white ">Gallery</Link></h1><hr />
+  <h1><Link to="/fanart" >Fanart</Link></h1><hr />
 
 
         <div className="row pixgrid">
@@ -107,4 +107,4 @@ class Gallery extends Component {
 
 
 
-export default Gallery;
+export default Fanart;

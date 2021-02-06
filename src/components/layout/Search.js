@@ -61,10 +61,10 @@ class Search extends Component {
       return (
     <section className="search-section" id="search">
         <div className="container">
-            <h1>Search Reviews</h1><hr />
+            <h1>Search Fanfiction</h1><hr />
             
             <div className="input-group">
-                <input className="form-control form-block" type="text" placeholder="Search Reviews..."  onChange={(e)=>this.searchSpace(e)} />
+                <input className="form-control form-block" type="text" placeholder="Search Fanfiction..."  onChange={(e)=>this.searchSpace(e)} />
             </div><hr />
             
             <div className="row">
