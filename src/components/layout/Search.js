@@ -40,10 +40,10 @@ class Search extends Component {
         }
       }).map(stories=>{
         return(
-        <div className="col-12">
+        <div className="col-12 mb-5">
           <div className="row">
           <div className="col-2">
-          <img src={stories.featured_image} alt={stories.title} className="w-100" />
+          {stories.rating}
           </div>
           <div className="col-10" key={stories.ID}>
             <Link to={`/reviews/${stories.ID}`}  > <h2 >{stories.title} </h2></Link>
@@ -59,7 +59,7 @@ class Search extends Component {
       })
   
       return (
-    <section className="search-section" id="search">
+    <section className="search-section mb-5" id="search">
         <div className="container">
             <h1>Search Fanfiction</h1><hr />
             

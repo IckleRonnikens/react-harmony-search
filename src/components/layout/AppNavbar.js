@@ -27,12 +27,12 @@ class AppNavbar extends Component {
                 <Link className="nav-link" to={process.env.PUBLIC_URL + "/fanart"}>Fanart</Link>
               </li>
               <li>
-              <Link className="nav-link" to={process.env.PUBLIC_URL + "/search#search"}>Search</Link>
+              <Link className="nav-link" to={process.env.PUBLIC_URL + "/search"}>Search</Link>
               </li>
         
             </ul>
             <span className="navbar-text">
-              <Link to={process.env.PUBLIC_URL + "/search#search"}>Login</Link> | <Link to={process.env.PUBLIC_URL + "/search#search"}>Register</Link>
+              <Link to={process.env.PUBLIC_URL + "/#"}>Login</Link> | <Link to={process.env.PUBLIC_URL + "/#"}>Register</Link>
               
             </span>
           </div>

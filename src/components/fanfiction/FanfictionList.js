@@ -29,7 +29,7 @@ const App = () => {
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (
-    <section className="fanfiction-section" id="fanfiction">
+    <section className="fanfiction-section mb-5" id="fanfiction">
         <div className="container">
             <h1>Fanfiction</h1><hr />
             <div className="row">
