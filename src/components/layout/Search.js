@@ -47,7 +47,7 @@ class Search extends Component {
           </div>
           <div className="col-10" key={stories.ID}>
             <Link to={`/reviews/${stories.ID}`}  > <h2 >{stories.title} </h2></Link>
-                {stories.excerpt}
+                {stories.summary}
                 <p><Link to={`/reviews/${stories.ID}`}  > <button className="btn btn-dark rounded-0 btn-sm text-white">Read More...</button></Link></p>
           </div>
           </div>
