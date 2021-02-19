@@ -10,7 +10,8 @@ const FanfictionPost = ({ posts, loading }) => {
     <ul className='list-group mb-4'>
       {posts.map(post => (
         <li key={post.id} className='list-group-item'>
-          {post.title}
+          <h2>{post.title}</h2><hr /><br />
+          {post.summary}
         </li>
       ))}
     </ul>

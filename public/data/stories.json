@@ -1,5 +1,5 @@
-[
-    {
+{
+    "stories": [{
         "id": 6281,
         "title": "Stregati",
         "language": "English",
@@ -103523,3 +103523,4 @@
         "_type": "dict"
     }
 ]
+}

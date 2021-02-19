@@ -9,18 +9,18 @@ class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: [],
+      stories: [],
       search:null
     };
   }
   componentDidMount() {
     axios
       .get(
-        "https://public-api.wordpress.com/rest/v1/sites/numbthumbz.wordpress.com/posts"
+        "./data/stories.json"
       )
       .then(res => {
-        console.log(res.data.posts);
-        this.setState({ posts: res.data.posts });
+        console.log(res.data.stories);
+        this.setState({ stories: res.data.stories });
       })
       .catch(error => console.log(error));
   }
@@ -32,23 +32,23 @@ class Search extends Component {
   
     render(){
 // eslint-disable-next-line
-      const items = this.state.posts.filter((posts)=>{
+      const items = this.state.stories.filter((stories)=>{
         if(this.state.search == null)
-            return posts
-        else if(posts.title.toLowerCase().includes(this.state.search.toLowerCase()) || posts.title.toLowerCase().includes(this.state.search.toLowerCase())){
-            return posts
+            return stories
+        else if(stories.title.toLowerCase().includes(this.state.search.toLowerCase()) || stories.title.toLowerCase().includes(this.state.search.toLowerCase())){
+            return stories
         }
-      }).map(posts=>{
+      }).map(stories=>{
         return(
         <div className="col-12">
           <div className="row">
           <div className="col-2">
-          <img src={posts.featured_image} alt={posts.title} className="w-100" />
+          <img src={stories.featured_image} alt={stories.title} className="w-100" />
           </div>
-          <div className="col-10" key={posts.ID}>
-            <Link to={`/reviews/${posts.ID}`}  > <h2 >{posts.title} </h2></Link>
-                {posts.excerpt}
-                <p><Link to={`/reviews/${posts.ID}`}  > <button className="btn btn-dark rounded-0 btn-sm text-white">Read More...</button></Link></p>
+          <div className="col-10" key={stories.ID}>
+            <Link to={`/reviews/${stories.ID}`}  > <h2 >{stories.title} </h2></Link>
+                {stories.excerpt}
+                <p><Link to={`/reviews/${stories.ID}`}  > <button className="btn btn-dark rounded-0 btn-sm text-white">Read More...</button></Link></p>
           </div>
           </div>
                 <hr />
